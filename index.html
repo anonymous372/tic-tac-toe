@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Socket.io chat</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div id="message-area">
+      <div id="username"></div>
+      <div>
+        <button onclick="startGame()" id="btn-start">Start Game</button>
+      </div>
+      <div>
+        <div class="row">
+          <button onclick="fireEvent(1)" id="btn-1" class="action-btn">
+            .
+          </button>
+          <button onclick="fireEvent(2)" id="btn-2" class="action-btn">
+            .
+          </button>
+          <button onclick="fireEvent(3)" id="btn-3" class="action-btn">
+            .
+          </button>
+        </div>
+        <div class="row">
+          <button onclick="fireEvent(4)" id="btn-4" class="action-btn">
+            .
+          </button>
+          <button onclick="fireEvent(5)" id="btn-5" class="action-btn">
+            .
+          </button>
+          <button onclick="fireEvent(6)" id="btn-6" class="action-btn">
+            .
+          </button>
+        </div>
+        <div class="row">
+          <button onclick="fireEvent(7)" id="btn-7" class="action-btn">
+            .
+          </button>
+          <button onclick="fireEvent(8)" id="btn-8" class="action-btn">
+            .
+          </button>
+          <button onclick="fireEvent(9)" id="btn-9" class="action-btn">
+            .
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/script.js"></script>
+</html>
