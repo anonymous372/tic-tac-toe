@@ -1,4 +1,5 @@
-var name = prompt("Enter your name");
+var name =
+  prompt("Enter your name") || `User-${Math.floor(Math.random() * 100)}`;
 var isWaiting = false;
 var isMyTurn = false;
 var gameId = null;
@@ -8,7 +9,7 @@ const gameState = [[], [], []];
 
 document.getElementById("username").innerHTML = name;
 
-var socket = io("http://localhost:4000", {
+var socket = io(window.location.href, {
   extraHeaders: {
     clientName: name,
   },
